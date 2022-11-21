@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Javascript 101</title>
+        <script type="text/javascript" src="../scripts/lesson_one.js"></script>
+        <script type="text/javascript" src="../scripts/commons.js"></script>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <div id="header">
+            <script type="text/javascript">createHeader("..")</script>
+        </div>
+        <div>
+            <section id="lesson1Section">
+                <h1>HTML & Javascript 101 Tutorial</h1>
+                <h2>HTML & Javascript 101 Tutorial</h2>
+                <h3>HTML & Javascript 101 Tutorial</h3>
+                <h3 style="color:red">HTML & Javascript 101 Tutorial</h3>
+                <div id="section1">
+                    <p>Welcome to HTML & Javascript class</p>
+                </div>
+                <div id="section2">
+                    <script type="text/javascript"javascript">text_by_javascript()</script>
+                </div>
+                <div id="section3">
+                    <form>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname">
+                        <input type="submit" value="Submit" onclick="greet( document.getElementById('fname').value, document.getElementById('lname').value )">
+        
+                    </form>
+                </div>            
+            </section>
+        </div>
+        <div id="footer">
+            <script type="text/javascript">createFooter()</script>
+        </div>
+    </body>
+</html>

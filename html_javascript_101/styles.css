@@ -1,0 +1,19 @@
+header, footer {
+	width: 100%;
+	background: #8080ff;
+	padding: 10px 0;
+	color: #400040;
+	display: block;
+    height: auto;
+}
+header{
+	top: 0;
+}
+footer{
+	bottom: 0;
+    position: sticky;
+}
+section{
+	width: 80%;
+	margin: 0 auto;
+}

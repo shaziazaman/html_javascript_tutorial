@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>Javascript 101</title>
+    <script type="text/javascript" src="../scripts/lesson_two.js"></script>
+    <script type="text/javascript" src="../scripts/commons.js"></script>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <div id="header">
+        <script type="text/javascript">createHeader("..")</script>
+    </div>
+    <section id="lesson2Section">
+        <h1>Javascript Lesson 2</h1>
+        <h2>Static Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student</th>
+                    <th>University</th>
+                    <th>Major</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Student 1</td>
+                    <td>UNT</td>
+                    <td>Computer Science</td>
+                </tr>
+                <tr>
+                    <td>Student 2</td>
+                    <td>UTD</td>
+                    <td>Business</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <form id="studentForm">
+            <label for="sname">Student name:</label><br>
+            <input type="text" id="sname" name="sname"><br>
+            <label for="uname">University name:</label><br>
+            <input type="text" id="uname" name="uname"><br>
+            <label for="mname">Major name:</label><br>
+            <input type="text" id="mname" name="mname"><br>
+            <input type="button" value="Add Student"
+                onclick="add_student( document.getElementById('sname').value, document.getElementById('uname').value, document.getElementById('mname').value )">
+
+        </form>
+        <table id="dynamicStudentTable">
+            <thead>
+                <tr>
+                    <th>Student</th>
+                    <th>University</th>
+                    <th>Major</th>
+                </tr>
+            </thead>
+            <tbody id="dynamicStudentTableBody">
+            </tbody>
+        </table>
+    </section>
+    <div id="footer">
+        <script type="text/javascript">createFooter()</script>
+    </div>
+</body>
+
+</html>
